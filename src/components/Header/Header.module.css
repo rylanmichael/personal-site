@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    background: yellow;
+    border-bottom: 1px solid black;
+}
+
+.active{
+    color: red;
+    background-color: blue;
+}

@@ -10,7 +10,7 @@ class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <Layout>
+      <Layout pathname={this.props.location.pathname}>
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
