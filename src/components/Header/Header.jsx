@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu } from "semantic-ui-react";
+import { Menu, Icon, Header as Ha } from "semantic-ui-react";
 import { Link } from "gatsby";
 import headerStyles from "./Header.module.css";
 
@@ -16,6 +16,7 @@ const Header = ({ pathname }) => {
           About
         </Menu.Item>
         <Menu.Item active={activeItem === "/notes"} as={Link} to="/notes">
+          <Icon name="book" color="blue" /> 
           Notes
         </Menu.Item>
       </Menu.Menu>

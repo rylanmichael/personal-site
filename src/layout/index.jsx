@@ -20,7 +20,7 @@ import HeaderTemp from "../components/Header/Header";
 
 const MainLayout = ({ children, pathname }) => {
   return (
-    <div style={{ padding: 15 }}>
+    <>
       <Helmet>
         <meta name="description" content={config.siteDescription} />
       </Helmet>
@@ -30,9 +30,12 @@ const MainLayout = ({ children, pathname }) => {
             <HeaderTemp pathname={pathname} />
           </Grid.Column>
         </Grid.Row>
-        {children}
+        <Grid.Row>
+          {children}
+      <div style={{height: 3000}} />
+        </Grid.Row>
       </Grid>
-    </div>
+    </>
   );
 };
 
